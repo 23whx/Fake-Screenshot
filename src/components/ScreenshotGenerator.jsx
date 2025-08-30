@@ -29,6 +29,7 @@ const ScreenshotGenerator = () => {
       subtitle: '"If there\'s a screenshot, it must be true"',
       styleSettings: 'Style Settings',
       saveImage: 'Save Image',
+      aboutAuthor: 'About Author',
       selectHero: 'Select Celebrity Background',
       uploadImage: 'Upload Custom Image',
       subtitleContent: 'Subtitle Content',
@@ -39,6 +40,7 @@ const ScreenshotGenerator = () => {
       subtitle: '"都有截图了一定是真的"',
       styleSettings: '样式设置',
       saveImage: '保存图片',
+      aboutAuthor: '作者介绍',
       selectHero: '选择名人背景',
       uploadImage: '上传本机图片',
       subtitleContent: '台词内容',
@@ -49,6 +51,7 @@ const ScreenshotGenerator = () => {
       subtitle: '"スクリーンショットがあれば、それは真実に違いない"',
       styleSettings: 'スタイル設定',
       saveImage: '画像を保存',
+      aboutAuthor: '作者紹介',
       selectHero: '有名人の背景を選択',
       uploadImage: 'カスタム画像をアップロード',
       subtitleContent: '字幕内容',
@@ -129,6 +132,18 @@ const ScreenshotGenerator = () => {
                   <Moon className="w-4 h-4" />
                 )}
               </button>
+
+              {/* 作者介绍 */}
+              <a
+                href="/about"
+                className={`inline-flex items-center px-3 py-2 rounded-lg transition-colors duration-200 ${
+                  isDarkMode 
+                    ? 'bg-gray-700 hover:bg-gray-600 text-gray-200' 
+                    : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
+                }`}
+              >
+                {t.aboutAuthor}
+              </a>
               
               {/* 样式设置 */}
               <button

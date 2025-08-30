@@ -1,0 +1,40 @@
+---
+const social = [
+  { name: 'Telegram', url: 'https://t.me/Rollkey' },
+  { name: 'X', url: 'https://x.com/Rollkey4' },
+  { name: 'YouTube', url: 'https://www.youtube.com/@Rollkey' },
+  { name: 'Blog', url: 'https://www.efortunetell.blog/' },
+  { name: 'Bilibili', url: 'https://space.bilibili.com/2659976' },
+];
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作者介绍 - Rollkey</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-gray-50">
+    <main class="max-w-3xl mx-auto px-4 py-10">
+      <a href="/" class="text-sm text-blue-600">← back</a>
+      <section class="mt-6 bg-white rounded-2xl shadow p-6">
+        <div class="flex items-center gap-4">
+          <img src="/admin_img.jpg" alt="Rollkey Avatar" class="w-20 h-20 rounded-xl object-cover" />
+          <div>
+            <h1 class="text-2xl font-bold">Rollkey</h1>
+            <p class="text-gray-700 mt-1">An ordinary fortune‑teller and independent developer.</p>
+            <p class="text-gray-600">Email: <a href="mailto:wanghongxiang23@gmail.com" class="text-blue-600">wanghongxiang23@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {social.map((s) => (
+            <a href={s.url} class="px-4 py-3 rounded-lg border bg-gray-50 hover:bg-gray-100 transition" target="_blank" rel="noopener noreferrer">{s.name}</a>
+          ))}
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
