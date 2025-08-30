@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ScreenshotGenerator from '../components/ScreenshotGenerator.jsx';
+---
+
+<Layout title="字幕截图生成器 - 让你的台词更有说服力">
+  <main class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+    <ScreenshotGenerator client:load />
+  </main>
+</Layout>
